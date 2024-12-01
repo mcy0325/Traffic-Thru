@@ -17,9 +17,37 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="AddCard" component={AddCardScreen} />
-        <Stack.Screen name="SetPassword" component={SetPasswordScreen} />
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="AddCard"
+          component={AddCardScreen}
+          options={{
+            title: '카드 추가하기',
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTintColor: '#fff',
+          }}
+        />
+        <Stack.Screen
+          name="SetPassword"
+          component={SetPasswordScreen}
+          options={{
+            title: '결제 비밀번호 설정',
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTintColor: '#fff',
+          }}
+        />
         <Stack.Screen name="IssueCard" component={IssueCardScreen} />
         <Stack.Screen name="MyPage" component={MyPageScreen} />
         <Stack.Screen name="Notice" component={NoticeScreen} />
