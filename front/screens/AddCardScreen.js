@@ -3,9 +3,11 @@ import {
   View,
   Text,
   TextInput,
-  Button,
-  StyleSheet,
   TouchableOpacity,
+  StyleSheet,
+  KeyboardAvoidingView,
+  ScrollView,
+  Platform,
 } from 'react-native';
 
 const AddCardScreen = ({navigation}) => {
@@ -27,75 +29,82 @@ const AddCardScreen = ({navigation}) => {
   };
 
   return (
-    <View style={styles.container}>
-      {/* 카드 번호 입력 */}
-      <Text style={styles.title}>카드 번호</Text>
-      <View style={styles.row}>
-        {cardNumber.map((value, index) => (
-          <TextInput
-            key={index}
-            style={styles.cardInput}
-            value={value}
-            onChangeText={text => handleCardNumberChange(text, index)}
-            keyboardType="numeric"
-            maxLength={4}
-          />
-        ))}
-      </View>
+    <KeyboardAvoidingView
+      style={styles.container}
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+      <ScrollView contentContainerStyle={styles.scrollContainer}>
+        {/* 카드 번호 입력 */}
+        <Text style={styles.title}>카드 번호</Text>
+        <View style={styles.row}>
+          {cardNumber.map((value, index) => (
+            <TextInput
+              key={index}
+              style={styles.cardInput}
+              value={value}
+              onChangeText={text => handleCardNumberChange(text, index)}
+              keyboardType="numeric"
+              maxLength={4}
+            />
+          ))}
+        </View>
 
-      {/* 유효 기간 입력 */}
-      <Text style={styles.title}>유효 기간</Text>
-      <View style={styles.row}>
-        {expiryDate.map((value, index) => (
-          <TextInput
-            key={index}
-            style={styles.expiryInput}
-            value={value}
-            onChangeText={text => handleExpiryDateChange(text, index)}
-            keyboardType="numeric"
-            maxLength={2}
-            placeholder={index === 0 ? 'MM' : 'YY'}
-          />
-        ))}
-      </View>
+        {/* 유효 기간 입력 */}
+        <Text style={styles.title}>유효 기간</Text>
+        <View style={styles.row}>
+          {expiryDate.map((value, index) => (
+            <TextInput
+              key={index}
+              style={styles.expiryInput}
+              value={value}
+              onChangeText={text => handleExpiryDateChange(text, index)}
+              keyboardType="numeric"
+              maxLength={2}
+              placeholder={index === 0 ? 'MM' : 'YY'}
+            />
+          ))}
+        </View>
 
-      {/* CVC 입력 */}
-      <Text style={styles.title}>CVC 번호</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="CVC"
-        value={cvc}
-        onChangeText={setCvc}
-        keyboardType="numeric"
-        maxLength={3}
-      />
+        {/* CVC 입력 */}
+        <Text style={styles.title}>CVC 번호</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="CVC"
+          value={cvc}
+          onChangeText={setCvc}
+          keyboardType="numeric"
+          maxLength={3}
+        />
 
-      {/* 카드 비밀번호 입력 */}
-      <Text style={styles.title}>카드 비밀번호</Text>
-      <TextInput
-        style={styles.passwordInput}
-        placeholder="카드 비밀번호 4자리를 입력하세요"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-        keyboardType="numeric"
-        maxLength={4}
-      />
+        {/* 카드 비밀번호 입력 */}
+        <Text style={styles.title}>카드 비밀번호</Text>
+        <TextInput
+          style={styles.passwordInput}
+          placeholder="카드 비밀번호 4자리를 입력하세요"
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+          keyboardType="numeric"
+          maxLength={4}
+        />
 
-      <TouchableOpacity
-        style={[styles.button, {alignSelf: 'center'}]}
-        onPress={() => navigation.navigate('SetPassword')}>
-        <Text style={styles.buttonText}>카드 등록하기</Text>
-      </TouchableOpacity>
-    </View>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('SetPassword')}>
+          <Text style={styles.buttonText}>카드 등록하기</Text>
+        </TouchableOpacity>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
     backgroundColor: '#000',
+  },
+  scrollContainer: {
+    padding: 20,
+    paddingBottom: 40,
   },
   title: {
     fontSize: 18,
@@ -164,6 +173,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     width: 150,
+    alignSelf: 'center',
     marginTop: 15,
   },
   buttonText: {
