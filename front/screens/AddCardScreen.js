@@ -73,7 +73,7 @@ const AddCardScreen = ({navigation}) => {
       {/* 카드 비밀번호 입력 */}
       <Text style={styles.title}>카드 비밀번호</Text>
       <TextInput
-        style={styles.input}
+        style={styles.passwordInput}
         placeholder="카드 비밀번호 4자리를 입력하세요"
         value={password}
         onChangeText={setPassword}
@@ -83,7 +83,7 @@ const AddCardScreen = ({navigation}) => {
       />
 
       <TouchableOpacity
-        style={styles.button}
+        style={[styles.button, {alignSelf: 'center'}]}
         onPress={() => navigation.navigate('SetPassword')}>
         <Text style={styles.buttonText}>카드 등록하기</Text>
       </TouchableOpacity>
@@ -114,6 +114,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     width: '22%',
+    height: 45,
     textAlign: 'center',
     fontSize: 16,
     color: '#fff',
@@ -124,6 +125,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     width: '48%',
+    height: 45,
     textAlign: 'center',
     fontSize: 16,
     color: '#fff',
@@ -133,16 +135,32 @@ const styles = StyleSheet.create({
     borderColor: '#F5A6A7',
     borderRadius: 5,
     padding: 10,
+    width: '18%',
+    height: 45,
+    textAlign: 'center',
     marginBottom: 15,
     fontSize: 16,
     color: '#fff',
+  },
+  passwordInput: {
+    borderWidth: 1,
+    borderColor: '#F5A6A7',
+    borderRadius: 5,
+    padding: 10,
+    width: '22%',
+    height: 45,
+    textAlign: 'center',
+    fontSize: 16,
+    color: '#fff',
+    marginBottom: 15,
   },
   button: {
     backgroundColor: '#F5A6A7',
     padding: 12,
     borderRadius: 10,
     alignItems: 'center',
-    marginTop: 20,
+    width: 150,
+    marginTop: 15,
   },
   buttonText: {
     color: '#000',

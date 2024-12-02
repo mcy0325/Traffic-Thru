@@ -45,7 +45,7 @@ const SetPasswordScreen = ({navigation}) => {
             key={index}
             style={[
               styles.dot,
-              {backgroundColor: index < input.length ? '#F5A6A7' : '#ddd'},
+              {backgroundColor: index < input.length ? '#F5A6A7' : '#f0f0f0'},
             ]}
           />
         ))}
@@ -64,12 +64,12 @@ const SetPasswordScreen = ({navigation}) => {
 
       {/* 키패드 */}
       <View style={styles.keypadContainer}>
-        {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map(key => (
+        {[...Array(9)].map((_, index) => (
           <TouchableOpacity
-            key={key}
+            key={index + 1}
             style={styles.key}
-            onPress={() => handleKeyPress(key)}>
-            <Text style={styles.keyText}>{key}</Text>
+            onPress={() => handleKeyPress((index + 1).toString())}>
+            <Text style={styles.keyText}>{index + 1}</Text>
           </TouchableOpacity>
         ))}
         <View style={styles.emptyKey} />
@@ -81,7 +81,7 @@ const SetPasswordScreen = ({navigation}) => {
         </TouchableOpacity>
         {/* 삭제 버튼 */}
         <TouchableOpacity style={styles.key} onPress={handleDelete}>
-          <Text style={styles.keyText}>⌫</Text>
+          <Text style={styles.keyText}>←</Text>
         </TouchableOpacity>
       </View>
 
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     height: 20,
     marginHorizontal: 10,
     borderRadius: 10,
-    backgroundColor: '#ddd',
+    backgroundColor: '#f0f0f0',
   },
   keypadContainer: {
     flexDirection: 'row',
@@ -143,8 +143,8 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 10,
-    borderRadius: 50,
+    marginVertical: 10,
+    borderRadius: 10,
     backgroundColor: '#f0f0f0',
   },
   emptyKey: {
@@ -157,10 +157,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   submitButton: {
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+    padding: 10,
     borderRadius: 5,
     backgroundColor: '#F5A6A7',
+    width: 100,
+    alignItems: 'center',
   },
   submitText: {
     color: '#000',

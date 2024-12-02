@@ -49,12 +49,48 @@ const AppNavigator = () => {
           }}
         />
         <Stack.Screen name="IssueCard" component={IssueCardScreen} />
-        <Stack.Screen name="MyPage" component={MyPageScreen} />
-        <Stack.Screen name="Notice" component={NoticeScreen} />
-        <Stack.Screen name="Payment" component={PaymentScreen} />
+        <Stack.Screen
+          name="MyPage"
+          component={MyPageScreen}
+          options={{
+            title: '마이페이지',
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTintColor: '#fff',
+          }}
+        />
+        <Stack.Screen
+          name="Notice"
+          component={NoticeScreen}
+          options={{
+            title: '공지사항',
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTintColor: '#fff',
+          }}
+        />
+        <Stack.Screen
+          name="Payment"
+          component={PaymentScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
         <Stack.Screen
           name="TransportHistory"
           component={TransportHistoryScreen}
+          options={{
+            title: '대중교통 이용내역',
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTintColor: '#fff',
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>

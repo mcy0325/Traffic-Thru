@@ -13,7 +13,6 @@ const MyPageScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>마이페이지</Text>
       {menuItems.map((item, index) => (
         <TouchableOpacity key={index} style={styles.menuItem}>
           <Text style={styles.menuText}>{item}</Text>
@@ -27,7 +26,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
   title: {
     fontSize: 24,
@@ -39,10 +38,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ddd',
     borderRadius: 5,
-    marginBottom: 10,
+    marginBottom: 15,
   },
   menuText: {
     fontSize: 16,
+    color: '#fff',
   },
 });
 
