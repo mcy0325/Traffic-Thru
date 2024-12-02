@@ -124,8 +124,8 @@ const styles = StyleSheet.create({
   },
   appName: {
     fontSize: 24,
-    fontWeight: 'bold',
     color: '#fff',
+    fontFamily: 'MoveSans-Bold',
   },
   contentContainer: {
     flex: 1,
@@ -142,8 +142,8 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 18,
     color: '#fff',
-    fontWeight: 'bold',
     marginBottom: 20,
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   passwordContainer: {
     flexDirection: 'row',
@@ -184,8 +184,8 @@ const styles = StyleSheet.create({
   },
   keyText: {
     fontSize: 24,
-    fontWeight: 'bold',
     color: '#000',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   confirmButton: {
     backgroundColor: '#F5A6A7',
@@ -195,14 +195,15 @@ const styles = StyleSheet.create({
   },
   confirmButtonText: {
     fontSize: 18,
-    fontWeight: 'bold',
     color: '#000',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   processingText: {
     fontSize: 18,
     color: '#fff',
     marginTop: 20,
     textAlign: 'center',
+    fontFamily: 'NEXONLv2Gothic',
   },
 });
 

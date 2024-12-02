@@ -28,11 +28,6 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#000',
   },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
   menuItem: {
     padding: 15,
     borderWidth: 1,
@@ -43,6 +38,7 @@ const styles = StyleSheet.create({
   menuText: {
     fontSize: 16,
     color: '#fff',
+    fontFamily: 'NEXONLv2Gothic',
   },
 });
 

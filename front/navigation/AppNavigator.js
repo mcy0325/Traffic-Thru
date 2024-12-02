@@ -48,7 +48,18 @@ const AppNavigator = () => {
             headerTintColor: '#fff',
           }}
         />
-        <Stack.Screen name="IssueCard" component={IssueCardScreen} />
+        <Stack.Screen
+          name="IssueCard"
+          component={IssueCardScreen}
+          options={{
+            title: '트래픽스루 교통카드 발급',
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTintColor: '#fff',
+          }}
+        />
         <Stack.Screen
           name="MyPage"
           component={MyPageScreen}

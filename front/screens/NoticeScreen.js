@@ -71,16 +71,19 @@ const styles = StyleSheet.create({
   },
   noticeTitle: {
     fontSize: 18,
-    fontWeight: 'bold',
     color: '#fff',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   warningTitle: {
+    fontSize: 18,
     color: '#FF0000',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   noticeContent: {
     marginTop: 5,
     fontSize: 14,
     color: '#ddd',
+    fontFamily: 'NEXONLv2Gothic',
   },
 });
 

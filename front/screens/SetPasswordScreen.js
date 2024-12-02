@@ -116,9 +116,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    fontWeight: 'bold',
     marginBottom: 20,
     color: '#fff',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   dotsContainer: {
     flexDirection: 'row',
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   },
   keyText: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   submitButton: {
     padding: 10,
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   submitText: {
     color: '#000',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
 });
 

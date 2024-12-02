@@ -99,9 +99,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
-    fontWeight: 'bold',
     marginBottom: 20,
     color: '#fff',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   row: {
     flexDirection: 'row',
@@ -118,6 +118,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 16,
     color: '#fff',
+    fontFamily: 'NEXONLv2Gothic',
   },
   expiryInput: {
     borderWidth: 1,
@@ -129,6 +130,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 16,
     color: '#fff',
+    fontFamily: 'NEXONLv2Gothic',
   },
   input: {
     borderWidth: 1,
@@ -141,6 +143,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     fontSize: 16,
     color: '#fff',
+    fontFamily: 'NEXONLv2Gothic',
   },
   passwordInput: {
     borderWidth: 1,
@@ -153,6 +156,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#fff',
     marginBottom: 15,
+    fontFamily: 'NEXONLv2Gothic',
   },
   button: {
     backgroundColor: '#F5A6A7',
@@ -165,7 +169,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#000',
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
 });
 

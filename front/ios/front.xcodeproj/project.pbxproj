@@ -14,6 +14,13 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-front-frontTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-front-frontTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		78C88B820E1C4442922DA9B3 /* MoveSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0A7846A6344C18F101520 /* MoveSans-Bold.ttf */; };
+		BBD3CFB671394965A128FA45 /* MoveSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 264066BF015C4FD2A09C18A5 /* MoveSans-Light.ttf */; };
+		784E035A346F4E63AECAB0D5 /* MoveSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F44C6B60C290433EA1F4D90B /* MoveSans-Medium.ttf */; };
+		70CBE0BA62334B82944261BB /* NEXONLv2Gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC5F0F15C7EB41D4957A2F40 /* NEXONLv2Gothic.ttf */; };
+		D2586C911A0D45BE992C9ADA /* NEXONLv2GothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E317F892B2744077803CDA4C /* NEXONLv2GothicBold.ttf */; };
+		314351EA11F84CF19970AA6E /* NEXONLv2GothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC9E343CB6104F0196170EB8 /* NEXONLv2GothicLight.ttf */; };
+		36015662BDCA4AB4A96B18F4 /* NEXONLv2GothicMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C6E0286323D46AB84B36913 /* NEXONLv2GothicMedium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = front/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-front-frontTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-front-frontTests.release.xcconfig"; path = "Target Support Files/Pods-front-frontTests/Pods-front-frontTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6DA0A7846A6344C18F101520 /* MoveSans-Bold.ttf */ = {isa = PBXFileReference; name = "MoveSans-Bold.ttf"; path = "../assets/fonts/MoveSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		264066BF015C4FD2A09C18A5 /* MoveSans-Light.ttf */ = {isa = PBXFileReference; name = "MoveSans-Light.ttf"; path = "../assets/fonts/MoveSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F44C6B60C290433EA1F4D90B /* MoveSans-Medium.ttf */ = {isa = PBXFileReference; name = "MoveSans-Medium.ttf"; path = "../assets/fonts/MoveSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BC5F0F15C7EB41D4957A2F40 /* NEXONLv2Gothic.ttf */ = {isa = PBXFileReference; name = "NEXONLv2Gothic.ttf"; path = "../assets/fonts/NEXONLv2Gothic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E317F892B2744077803CDA4C /* NEXONLv2GothicBold.ttf */ = {isa = PBXFileReference; name = "NEXONLv2GothicBold.ttf"; path = "../assets/fonts/NEXONLv2GothicBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC9E343CB6104F0196170EB8 /* NEXONLv2GothicLight.ttf */ = {isa = PBXFileReference; name = "NEXONLv2GothicLight.ttf"; path = "../assets/fonts/NEXONLv2GothicLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C6E0286323D46AB84B36913 /* NEXONLv2GothicMedium.ttf */ = {isa = PBXFileReference; name = "NEXONLv2GothicMedium.ttf"; path = "../assets/fonts/NEXONLv2GothicMedium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +138,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				9A2F288E7A4A4061973A7556 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +164,21 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		9A2F288E7A4A4061973A7556 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				6DA0A7846A6344C18F101520 /* MoveSans-Bold.ttf */,
+				264066BF015C4FD2A09C18A5 /* MoveSans-Light.ttf */,
+				F44C6B60C290433EA1F4D90B /* MoveSans-Medium.ttf */,
+				BC5F0F15C7EB41D4957A2F40 /* NEXONLv2Gothic.ttf */,
+				E317F892B2744077803CDA4C /* NEXONLv2GothicBold.ttf */,
+				DC9E343CB6104F0196170EB8 /* NEXONLv2GothicLight.ttf */,
+				6C6E0286323D46AB84B36913 /* NEXONLv2GothicMedium.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +275,13 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				78C88B820E1C4442922DA9B3 /* MoveSans-Bold.ttf in Resources */,
+				BBD3CFB671394965A128FA45 /* MoveSans-Light.ttf in Resources */,
+				784E035A346F4E63AECAB0D5 /* MoveSans-Medium.ttf in Resources */,
+				70CBE0BA62334B82944261BB /* NEXONLv2Gothic.ttf in Resources */,
+				D2586C911A0D45BE992C9ADA /* NEXONLv2GothicBold.ttf in Resources */,
+				314351EA11F84CF19970AA6E /* NEXONLv2GothicLight.ttf in Resources */,
+				36015662BDCA4AB4A96B18F4 /* NEXONLv2GothicMedium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

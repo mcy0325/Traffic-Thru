@@ -1,0 +1,33 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/MoveSans-Bold.ttf",
+      "sha1": "af1be5e3f1b40e0ccf0dfc8f586d45d13b14380e"
+    },
+    {
+      "path": "assets/fonts/MoveSans-Light.ttf",
+      "sha1": "2a0e9085230ccc5a1c5a8e06bfbe8f7a6f4d9be7"
+    },
+    {
+      "path": "assets/fonts/MoveSans-Medium.ttf",
+      "sha1": "5c63124d21d8ce3066faf104abb533f999ac5b54"
+    },
+    {
+      "path": "assets/fonts/NEXONLv2Gothic.ttf",
+      "sha1": "2d6e2c723ed4bdefbab120286bf3123abd5f2cd2"
+    },
+    {
+      "path": "assets/fonts/NEXONLv2GothicBold.ttf",
+      "sha1": "0c5730d5bd23f323e413777898a1b530b9d81d52"
+    },
+    {
+      "path": "assets/fonts/NEXONLv2GothicLight.ttf",
+      "sha1": "1ee547287ca08b97ace5f3bb695cbc0846af8790"
+    },
+    {
+      "path": "assets/fonts/NEXONLv2GothicMedium.ttf",
+      "sha1": "1fcc355160015eb4c9eb8e2c940ac149790bc58c"
+    }
+  ]
+}

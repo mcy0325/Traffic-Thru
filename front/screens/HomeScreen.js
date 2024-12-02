@@ -93,10 +93,7 @@ const HomeScreen = ({navigation}) => {
         {activeTab === 'myCards' ? renderMyCards() : renderAddCard()}
       </View>
       {/* 배너 이미지 */}
-      <Image
-        source={require('../assets/banner.png')} // 배너 이미지 경로
-        style={styles.banner}
-      />
+      <Image source={require('../assets/banner.png')} style={styles.banner} />
       {/* 공지사항 버튼 */}
       <TouchableOpacity
         style={styles.button}
@@ -112,7 +109,7 @@ const HomeScreen = ({navigation}) => {
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('IssueCard')}>
-        <Text style={styles.buttonText}>트래픽스 교통카드 발급</Text>
+        <Text style={styles.buttonText}>트래픽스루 교통카드 발급</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
@@ -137,8 +134,8 @@ const styles = StyleSheet.create({
   },
   appName: {
     fontSize: 24,
-    fontWeight: 'bold',
     color: '#fff',
+    fontFamily: 'MoveSans-Bold',
   },
   tabContainer: {
     flexDirection: 'row',
@@ -166,7 +163,7 @@ const styles = StyleSheet.create({
   },
   activeTabText: {
     color: '#fff',
-    fontWeight: 'bold',
+    fontFamily: 'NEXONLv2GothicBold',
   },
   contentContainer: {
     flex: 1,
@@ -199,6 +196,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#fff',
     textAlign: 'center',
+    fontFamily: 'NEXONLv2Gothic',
   },
   noCardsText: {
     fontSize: 16,
@@ -235,7 +233,7 @@ const styles = StyleSheet.create({
     color: '#000',
     fontSize: 16,
     textAlign: 'left',
-    fontWeight: '500',
+    fontFamily: 'NEXONLv2Gothic',
   },
 });
 

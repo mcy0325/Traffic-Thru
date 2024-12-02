@@ -143,6 +143,7 @@ const styles = StyleSheet.create({
   dateText: {
     color: '#fff',
     fontSize: 16,
+    fontFamily: 'NEXONLv2Gothic',
   },
   searchButton: {
     backgroundColor: '#F5A6A7',
@@ -153,8 +154,8 @@ const styles = StyleSheet.create({
   },
   searchButtonText: {
     fontSize: 16,
-    fontWeight: 'bold',
     color: '#000',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   historyItem: {
     marginBottom: 15,
@@ -167,7 +168,8 @@ const styles = StyleSheet.create({
   historyDate: {
     fontSize: 16,
     color: '#fff',
-    marginBottom: 5,
+    marginBottom: 8,
+    fontFamily: 'NEXONLv2Gothic',
   },
   historyDetails: {
     flexDirection: 'row',
@@ -177,10 +179,12 @@ const styles = StyleSheet.create({
   historyBusNumber: {
     fontSize: 24,
     color: '#F5A6A7',
+    fontFamily: 'NEXONLv2GothicMedium',
   },
   historyAmount: {
     fontSize: 18,
     color: '#fff',
+    fontFamily: 'NEXONLv2Gothic',
   },
 });
 
